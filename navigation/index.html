@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue.js in action</title>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div id="app" class="main-app">
+
+    <!--   main menu   -->
+    <app-menu></app-menu>
+
+    <div class="main-content">
+        <!--   main content for every pages   -->
+        <router-view></router-view>
+    </div>
+
+        <!--   main footer   {{username | capitalize}} -->
+        <app-footer></app-footer>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
